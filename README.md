@@ -1,39 +1,53 @@
 # 🚌 GoBus – Smart Bus Booking System
 
-**GoBus** is an end-to-end online bus booking system built using **PHP**, **HTML**, **CSS**, **JavaScript**, and **Bootstrap**. It allows users to search and book bus tickets, while providing admin controls to manage operations and a conductor module for real-time ticket verification via **QR code scanning**.
+**GoBus** is a complete bus booking solution built using **PHP**, **HTML**, **CSS**, **JavaScript**, and **Bootstrap**. It provides an intuitive ticket booking interface for passengers, a powerful admin panel for bus operators, a conductor module for real-time ticket scanning via **QR code**, and supports **secure online payments**.
 
+---
 
+## 🚀 Features
 
-## ✨ Key Features
+### 🔹 Passenger (User) Features
+- 🔍 Search buses by route and date
+- 🪑 Choose seats from interactive seat layout
+- 💳 Pay online and book tickets securely
+- 🎟️ Receive e-ticket with QR code
+- 👤 User registration, login, and booking history
 
-### 🔹 User Module
-- 🔍 Search buses by source, destination & date
-- 🪑 Select seats and book instantly
-- 🎟️ View & download e-tickets with QR code
-- 👤 Register and manage bookings
+### 🔹 Admin Features
+- 🔐 Login-secured admin panel
+- 🚌 Add/Edit/Delete buses, routes, schedules
+- 📅 Trip scheduling and price management
+- 📊 View all bookings and revenue reports
+- 👥 Manage users and conductors
 
-### 🔹 Admin Module
-- 🔐 Secure admin login
-- 🚌 Add/Edit/Delete buses, routes & timings
-- 📊 View all bookings and user data
-- 📅 Schedule management for upcoming trips
+### 🔹 Conductor Features
+- 📲 Login with conductor credentials
+- 🔍 Scan passenger QR codes via webcam or mobile
+- ✅ Confirm or reject ticket based on trip
+- 📋 View list of passengers per bus trip
 
-### 🔹 Conductor Module
-- 📱 Mobile-friendly interface for conductors
-- 🔎 Scan passenger tickets using QR code
-- ✅ Confirm or reject tickets in real time
-- 📋 View passenger list per trip
+### 🔹 Payment Integration
+- 💳 Integrated with secure **Razorpay**
+- 📜 Transaction history linked with each booking
+- ✅ Real-time payment verification
+- 📧 E-ticket emailed upon successful payment *(optional)*
 
+---
 
-
-## 🛠 Tech Stack
+## 🧰 Tech Stack
 
 - **Frontend**: HTML5, CSS3, JavaScript, Bootstrap 5
 - **Backend**: Core PHP
 - **Database**: MySQL
-- **QR Code Generation**: PHP QR code libraries
-- **QR Scanning**: JavaScript + Webcam API or mobile camera input
+- **QR Code**: PHP QR Code Generator
+- **QR Scanning**: JavaScript + Webcam API / Mobile camera
+- **Payment Gateway**: Razorpay / Stripe / PayPal *(based on what you used)*
 
+---
 
+## ⚙️ Setup Instructions
 
-
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/gobus.git
+cd gobus
