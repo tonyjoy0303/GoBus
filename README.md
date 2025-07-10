@@ -49,5 +49,5 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/gobus.git
+git clone https://github.com/tonyjoy0303/gobus.git
 cd gobus
