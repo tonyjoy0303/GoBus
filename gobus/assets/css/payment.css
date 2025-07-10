@@ -1,0 +1,121 @@
+:root {
+    --primary: #007C8C;
+    --accent: #FFA534;
+    --gray: #AAB8C2;
+    --bg: #F9FCFC;
+    --white: #ffffff;
+    --dark: #024C56; /* Lighter dark */
+    --footer-dark: #036068;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, var(--bg), #E8F4F4);
+    margin: 0;
+    color: var(--white);
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+  }
+  
+  .card {
+    background: var(--dark);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    overflow: hidden;
+    color: var(--white);
+  }
+  
+  .card-header {
+    text-align: center;
+    padding: 2rem 2rem 1rem;
+    background: var(--dark);
+  }
+  
+  .card-header img {
+    max-height: 60px;
+    margin-bottom: 1rem;
+  }
+  
+  .card-header h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: var(--white);
+  }
+  
+  .card-header p {
+    color: var(--gray);
+    font-size: 0.95rem;
+  }
+  
+  .card-body {
+    padding: 1.5rem 2rem;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px dashed rgba(255,255,255,0.1);
+    padding: 1rem 0;
+    font-size: 1rem;
+    color: var(--white);
+  }
+  
+  .row span {
+    color: var(--gray);
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  .row ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.2rem;
+    font-size: 0.95rem;
+    color: #e6e6e6;
+  }
+  
+  .row.total {
+    border-top: 2px solid rgba(255,255,255,0.15);
+    padding-top: 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  
+  .card-footer {
+    padding: 2rem;
+    text-align: center;
+    background: var(--footer-dark);
+  }
+  
+  #rzp-button1 {
+    background-color: var(--accent);
+    color: #fff;
+    font-size: 1rem;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #rzp-button1:hover {
+    background-color: #e18e2c;
+  }
+  
+  @media (max-width: 600px) {
+    .row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.4rem;
+    }
+  
+    .card-header h2 {
+      font-size: 1.4rem;
+    }
+  }
+  

@@ -1,0 +1,162 @@
+
+:root {
+    --primary: #007C8C;
+    --accent: #FFA534;
+    --gray: #AAB8C2;
+    --bg: #F4F4F4;
+    --white: #ffffff;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom right, #F9FCFC, #E8F4F4);
+    color: #012F34;
+  }
+  
+  .seat-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+  }
+  
+  .subtitle {
+    color: var(--gray);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  
+  .seat-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .seat-row {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+  
+  .seat-block {
+    text-align: center;
+  }
+  
+  .seat-img {
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .seat-img:hover {
+    transform: scale(1.1);
+  }
+  
+  .seat-img.booked {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+  
+  .seat-img.selected {
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    background-color: #fff8f1;
+  }
+  
+  .seat-aisle {
+    width: 60px;
+  }
+  
+  .selected-info {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    margin-bottom: 2rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .selected-info h2 {
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    color: var(--primary);
+  }
+  
+  .seat-input {
+    margin-bottom: 1.2rem;
+    text-align: left;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+  }
+  
+  .seat-input label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+    color: #012F34;
+    font-weight: 500;
+  }
+  
+  .seat-input input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid var(--gray);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .seat-input input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(0, 124, 140, 0.1);
+  }
+  
+  .btn-proceed {
+    background-color: var(--accent);
+    border: none;
+    color: var(--white);
+    padding: 16px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-proceed:hover {
+    background-color: #e18e2c;
+  }
+  
+  @media (max-width: 600px) {
+    .seat-img {
+      width: 42px;
+      height: 42px;
+    }
+  
+    .seat-aisle {
+      width: 40px;
+    }
+  
+    .seat-row {
+      gap: 0.8rem;
+    }
+  
+    .selected-info {
+      padding: 1.5rem;
+    }
+  }
+  

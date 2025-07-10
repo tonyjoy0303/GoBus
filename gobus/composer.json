@@ -1,0 +1,7 @@
+{
+    "require": {
+        "dompdf/dompdf": "^3.1",
+        "endroid/qr-code": "^3.9",
+        "chillerlan/php-qrcode": "^5.0"
+    }
+}
